@@ -1,0 +1,957 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    overflow-y: auto;
+
+}
+.popupdisplay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: none;
+}
+.blacklogohold{
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid lightgray;
+}
+.securitycard{
+    border: none;
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    margin-top: 12%;
+    background-color: white;
+    z-index: 1000;
+    border-radius: 10px;
+
+}
+.actioncard{
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    opacity: 0.7;
+    padding-top: 30px;
+}
+.securitmessege{
+    font-family: "Roboto", sans-serif;
+    opacity: 0.7;
+}
+.loginbuttondiv{
+    border-top: 1px solid lightgray;
+
+}
+#loginbutton{
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 550;
+    border: none;
+    background-color: transparent;
+    color: rgb(61, 61, 255);
+    border-radius: 5px;
+}
+#loginbutton:hover{
+    background-color: rgb(235, 234, 234);
+}
+.paretcon{
+    /* border: 1px solid; */
+    height: 100dvh;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+}
+.container{
+    /* border: 1px solid; */
+    width: 350px;
+    /* margin: auto; */
+    /* margin-top: 10%; */
+    /* text-align: center; */
+}
+.authparagraph{
+    font-size: 2em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    margin: 20px 15px;
+    opacity: 0.8;
+}
+.buttondivs{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nobutton{
+    font-size: 1em;
+    font-weight: 500;
+    padding: 7px 25px;
+    border: 1px solid rgb(182, 181, 181);
+    background-color: transparent;
+    color: black;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.nobutton:hover{
+    background-color: lightgray;
+}
+.yesbutton{
+    font-size: 1em;
+    font-weight: 500;
+    padding: 7px 25px;
+    border: none;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.yesbutton:hover{
+    opacity: 0.9;
+}
+
+
+
+
+.fotterholder{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* height: 100px; */
+    border-top: 2px solid lightgray;
+}
+.footer{
+    display: flex;
+    flex: 7;
+    padding-left: 10px;
+}
+.boddypusher{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footusher{
+    /* border: 1px solid; */
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.naration{
+    opacity: 0.7;
+}
+.footerlink{
+    text-decoration: underline;
+    color: black;
+    opacity: 0.7;
+}
+.footerlinkholder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    gap: 10px;
+    /* border: 1px solid; */
+    height: 140px;
+}
+@media(max-width: 450px){
+    
+    .authparagraph{
+        font-weight: 500;
+    }
+    .container{
+            /* margin-top: 50%;     */
+    }
+    .footer{
+        display: none;
+    }
+    .yesbutton{
+        background-color: rgb(58, 58, 252);
+        color: whitesmoke;
+    }
+    .nobutton{
+        opacity: 0.6;
+    }
+    .naration{
+        display: none;
+    }
+    .fotterholder{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        /* height: 100px; */
+    }
+    .boddypusher{
+        flex: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid; */
+    }
+    .footusher{
+        /* border: 1px solid; */
+        flex: 1; 
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        /* max-height: 150px; */
+    }
+    .footerlinkholder{
+        display: flex;
+        gap: 21px;
+        padding: 5px 0px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+    .bodyrightcontents{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+}
+
+
+/* sign in styles */
+
+/* .roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+.logingbody{
+    background-image: url(images/chase\ new_york_night_6.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.loginformcontainer{
+    width: fit-content;
+    border: none;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.headerimg{
+    width: 170px;
+    padding: 30px 0px;
+}
+.formcover{
+border: none;
+margin-top: 120px;
+width: fit-content;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 15px;
+background-color: white;
+border-radius: 10px;
+}
+.formcontainer{
+    /* border: 1px solid; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.inputcon{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+.impact{
+    width: 340px;
+}
+.password-show{
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-bottom: 1px solid rgb(134, 134, 134);
+}
+.forgot-enrolle-signup{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.fontchnge{
+    font-family: "Roboto", sans-serif;
+    color: gray;
+    /* font-size: 0.9em; */
+}
+.impact{
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid rgb(134, 134, 134);
+    outline: none;
+}
+.impact:focus{
+    border-bottom: 2px solid blue;
+}
+.passwordfilde{
+    border: none;
+}
+.passwordfilde:focus{
+    border: none;
+}
+.passhow{
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(2, 90, 255);
+    font-family: "Roboto", sans-serif;
+    border: none;
+    /* border-bottom: 1px solid rgb(134, 134, 134); */
+    background-color: transparent;
+}
+.password-show:focus-within{
+    border-bottom: 2px solid blue;
+}
+.passhow:focus{
+    border: none;
+}
+
+/* javascript display */
+.wronginput{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    gap: 5px;
+}
+/* javascript display */
+
+.wronglabele{
+    margin: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8em;
+    color: rgb(196, 62, 38);
+}
+.loginexcla{
+    font-size: 0.7em;
+    color: rgb(196, 62, 38);
+}
+.wrongshow{
+    display: none;
+    width: fit-content;
+}
+.checkshold{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    width: 100%;
+    padding: 10px 0px;
+}
+.remembermehold{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tokenhold{
+    flex: 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* justify-content: center; */
+    /* text-align: center; */
+    gap: 10px;
+}
+.checklabel{
+    font-family: "Roboto", sans-serif;
+    color: gray;
+}
+.tokencon{
+    display: none;
+}
+.signinbutton{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif var(--sero4bv1jcjp4m0);
+    width: 340px;
+    margin: auto;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(60, 89, 185);
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signinbutton:hover{
+    background-color: rgb(42, 70, 165);
+}
+.butonlogincard{
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif var(--sero4bv1jcjp4m0);
+    border: none;
+    margin: 10px 0px;
+    background-color: transparent;
+    color: rgba(53, 53, 253, 0.815);
+}
+.butonlogincard:hover{
+    color: rgb(7, 7, 250);
+}
+.fa-chevron-right{
+    color: rgba(53, 53, 253, 0.815);
+}
+.footerlogincontaner{
+    border: 1px solid;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socialmediaicons{
+    /* border: 1px solid rgb(187, 255, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 20px 0px;
+}
+.footericons{
+    font-size: 1.5em;
+    opacity: 0.6;
+}
+.fotlinks{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 30px;
+    max-width: 85%;
+    /* border: 1px solid; */
+    text-align: center;
+}
+.links{
+    font-size: 0.8em;
+    text-decoration: underline;
+    color: black;
+    opacity: 0.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif var(--sero4bv1jcjp4m0);
+}
+.Member{
+    text-decoration: none;
+}
+.jb2025{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif var(--sero4bv1jcjp4m0);
+}
+
+/* end of sigin style */
+
+.securebody{
+    background-color: whitesmoke;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif var(--sero4bv1jcjp4m0); */
+    padding: 0px;
+    margin: 0px;
+}
+.headercon{
+    /* border: 1px solid; */
+    display: flex;
+    background-color: rgb(37, 68, 170);
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.exitinline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.exitbuttoncon{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hederimageholder{
+    flex: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.languagehlder{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hederimageholder img{
+    /* width: 170px;
+    height: 31px; */
+}
+.exitbutton{
+    color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95em;
+    font-weight: 550;
+    background-color: transparent;
+    border: none;
+}
+.exitbutton:hover{
+    cursor: pointer;
+}
+.whitechevon{
+    color: whitesmoke;
+    font-size: 0.95em;
+    font-weight: 550;
+}
+.expaniol{
+    border: none;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95em;
+    font-weight: 550;
+    color: whitesmoke;
+    background-color: transparent;
+}
+.expaniol:hover{
+    cursor: pointer;
+}
+/* security body start */
+.boycontainer{
+    display: flex;
+}
+.leftflexdiv{
+    flex: 3;
+}
+.bodyrightcontents{
+    flex: 7;
+}
+.questionspan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qestion{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    opacity: 0.85;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+.secureqestionicon{
+    font-size: 0.9em;
+    opacity: 0.85;
+}
+.unexpecedspancon{
+    display: flex;
+    justify-content: flex-end;
+    width: 78%;
+}
+.Faqread{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 7px;
+    width: 70%;
+}
+.FaQs{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    color: rgba(21, 21, 253, 0.815);
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+.nnertextcon{
+    /* border: 1px solid; */
+    width: 70%;
+}
+.firsttext{
+    margin: 8px 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.loadingcon{
+    border: 1px solid rgb(90, 90, 90);
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: rgb(90, 90, 90);
+    height: 0px;
+    display: flex;
+    align-items: center;
+    border-left: 0px;
+}
+.innerloaading{
+    background-color: rgb(14, 14, 145);
+    padding: 2px;
+    border: 0.2px solid rgb(255, 255, 255);
+    width: 20%;
+    border-radius: 20px;
+    
+}
+.bodyheadertext{
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+.paragraph{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    opacity: 0.99;
+}
+.otpmessage{
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    font-size: 0.9em;
+    opacity: 0.9;
+    margin-top: 20px;
+}
+.otpinputcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.otpinputlabel{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    opacity: 0.88;
+    margin-bottom: 10px ;
+}
+.otpinput{
+    width: 40%;
+    min-width: 230px;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    font-size: 1em;
+    letter-spacing: 10px;
+    font-weight: 550;
+    background-color: transparent;
+}
+.nextbutton{
+    padding: 5px 40px;
+    border: none;
+    background-color: rgb(185, 180, 180);
+    opacity: 0.9;
+    border-radius: 3px;
+}
+.nextbutton:hover{
+    background-color: rgb(211, 204, 204);
+}
+.Recoveryloaddiv{
+    width: 40%;
+}
+.recoverinputcon{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 610 px;
+}
+@media(max-width: 900px){
+    .recoverinputcon{
+        height: 100%;
+    }
+    .boycontainer{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+}
+.loadingpage{
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    opacity: 0.7;
+}
+.paragraph{
+    font-family: "Roboto", sans-serif;
+    opacity: 0.85;
+}
+.firsttextcon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.buttomtals{
+    font-family: "Roboto", sans-serif;
+    opacity: 0.8;
+    font-size: 0.95em;
+}
+.cardloaddiv{
+    width: 60%;
+}
+
+/* email device verify */
+.emailparentcon{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    opacity: 0.9;
+    gap: 20px;
+    border-radius: 20px;
+}
+.googlelogoemail{
+    width: 40px;
+}
+.emailheadernarat{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    margin: 10px 0px;
+}
+.helpnaration{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+}
+.emailuserspaceicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border: 1px solid;
+    gap: 10px;
+    border-radius: 30px;
+}
+.emailuserspaceicon:hover{
+    background-color: rgba(243, 242, 242, 0.863);
+}
+.emaildrop{
+    margin: 2px 0px;
+}
+.emaildisplayclass{
+    font-size: 0.9em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    opacity: 0.85;
+}
+.fa-circle-user{
+    text-align: center;
+    margin: 0px 0px 0px 4px ;
+}
+.dropicon{
+    text-align: center;
+    margin: 4px 4px 0px 0px;
+}
+.resendbuttonclass{
+    font-family: "Roboto", sans-serif;
+    margin-top: 50px;
+    border: none;
+    background-color: transparent;
+    font-weight: 550;
+    color: blue;
+    font-size: 0.8em;
+    padding: 10px;
+    border-radius: 20px;
+}
+.resendbuttonclass:hover{
+    background-color: rgb(202, 233, 243);
+}
+.emailconinnerleft{
+    flex: 5;
+}
+.emailconinnerright{
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.secemailconinnerright{
+    margin: 4% 0%;
+    /* border: 1px solid; */
+}
+.numnaratfirstline{
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+}
+.numberholdsecandyes{
+    font-weight: 550;
+    font-size: 1em;
+}
+.numberholdclass{
+    font-size: 2em;
+    margin: 0px;
+    text-align: center;
+}
+.nextbuttonnumholddiv{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nextbuttonnumhold{
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: transparent;
+    font-weight: 550;
+    color: blue;
+    font-size: 0.8em;
+    padding: 10px;
+    border-radius: 20px;
+}
+.nextbuttonnumhold:hover{
+    background-color: rgb(202, 233, 243);
+}
+.emailotpclass{
+    width: 87%;
+    font-size: 1em;
+    font-weight: 550;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+    padding: 10px 5px;
+    border-radius: 7px;
+    border: 1px solid rgb(138, 138, 138);
+}
+
+.emailotpclass::-webkit-inner-spin-button,
+.emailotpclass::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.emailotpclass:focus{
+    outline: 2px solid blue;
+    border: none;
+}
+.emailotpclass::placeholder{
+    font-size: 0.8em;
+    font-weight: 550;
+    letter-spacing: 0px;
+}
+.emailtopdiv{
+    margin-top: 20%;
+}
+.nextbuttonnumholddiv{
+    margin-top: 20%;
+}
+.slideinotpiput{
+    transform: translatex(10%);
+    transform: translatex(-2%);
+    transition: transform 0.5s ease-in-out;
+}
+.slideinotpiput.show{
+    transform: translate(0,0);
+}
+
+
+
+
+@media(max-width: 400px){
+    .emailparentcon{
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+.bmessagimgholder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gmessagdiv{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(167, 166, 166);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gmessageimgclass{
+    width: 100px;
+    height: 100px;
+}
+.gmessagparabold{
+    font-family: "Roboto", sans-serif;
+    margin: 10px 0px;
+    font-size: 0.9em;
+    font-weight: 550;
+}
+.gmessagbutton{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50px;
+height: 50px;
+border-radius: 20px;
+border: 2px solid rgb(87, 87, 87);
+}
+.gmessagbutton:hover{
+    background-color: lightgray;
+}
+.gmessagbutton:active{
+    opacity: 0.6;
+}
+.androidmessageimg{
+    width: 30px;
+}
+#nextbuttonnumholdid{
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+}
+.deviceloaddiv{
+    width: 80%;
+}
+.checkcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.checkchild{
+    font-size: 6em;
+    color: rgb(73, 187, 73);
+}
+.checkparent{
+    border: 1px solid;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-radius: 100px;
+    color: rgb(56, 143, 56);
+}
+.documentloaddiv{
+    width: 100%;
+    border: none;
+    background-color: rgb(77, 180, 77);
+}
+.contactpara{
+    opacity: 0.7;
+    font-family: "Roboto", sans-serif;
+}

